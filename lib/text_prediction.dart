@@ -186,7 +186,6 @@ class _PredictNextWordScreenState extends State<PredictNextWordScreen> {
         ),
 
       ),
-      resizeToAvoidBottomInset: true,
     );
   }
 }

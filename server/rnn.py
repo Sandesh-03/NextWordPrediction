@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify 
 import numpy as np 
+from flask_cors import CORS
  
 app = Flask(__name__) 
+CORS(app)  
  
 # Load the dataset 
-with open('data2.txt', 'r') as f: 
+with open('mini Project\data2.txt', 'r') as f: 
     data = f.read() 
  
 # Preprocessing data 

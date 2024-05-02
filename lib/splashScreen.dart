@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'bottom_nav_bar.dart';
+import 'tab_view.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(const Duration(seconds: 4), () {
       _animationController.dispose();
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) =>  const BottomNavBar(),
+        builder: (context) =>  const TabView(),
       ));
     });
   }
