@@ -91,7 +91,7 @@ class _PredictNextWordScreenState extends State<PredictNextWordScreen> {
   }
 
   Future<void> _predictNextWord(String inputText, String language) async {
-    var url = Uri.parse('http://127.0.0.1:5000/predict_next_word_route');
+    var url = Uri.parse('http://127.0.0.1:5001/predict_next_word_route');
     try {
       var response = await http.post(
         url,

@@ -37,7 +37,7 @@ def predict_next_word_route():
     data = request.json
     training_data = data.get('training_data', [])
     last_sentence = training_data[-1] if training_data else ""
-    language = data.get('language', 'english')  # Default to English if language not specified
+    language = data.get('language', 'english') 
     global ngram_counts
     ngrams = create_ngrams(training_data, 2)
     ngram_counts = Counter(ngrams)
@@ -59,7 +59,6 @@ def detect_language(text):
         return 'unknown'
 
 def preprocess_marathi_text(text):
-    # Add your Marathi text preprocessing steps here if needed
     return text
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=5001)
