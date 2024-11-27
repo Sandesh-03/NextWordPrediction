@@ -72,6 +72,8 @@ Even with a relatively small dataset, the N-Gram model ensures lightweight and h
       ```
  The server will start running at http://127.0.0.1:5001.
  
+ ----
+ 
 ### 📱 Frontend Setup
  
    1. **Ensure you have Flutter installed. If not, follow the [Flutter installation guide.](https://docs.flutter.dev/get-started/install)**
